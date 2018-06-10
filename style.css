@@ -1,0 +1,332 @@
+body
+{
+    font : 15px/1.5 Courier New, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container
+{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.dark
+{
+    padding: 15px;
+    background: #14E814;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header
+{
+    background-image: url(images/background_img4.JPG);
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a
+{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li
+{
+    float: left;
+    display: block;
+    padding: 0 20px 0 20px;
+}
+
+header #branding
+{
+    float: left;
+}
+
+header #branding h1
+{
+    margin: 0;
+}
+
+header nav 
+{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a
+{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover
+{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase
+{
+    min-height: 400px;
+    background: url(images/image_1.JPG) no-repeat 0 -300px;
+    text-align: center;
+    color: black;
+}
+
+#showcase_about
+{
+    min-height: 300px;
+    background: url(images/background_img3.JPG) no-repeat 0 -600px;
+    text-align: center;
+    color: black;
+}
+
+
+#showcase_contacts
+{
+    min-height: 200px;
+    background: url(images/contacts.JPG) no-repeat -100px -100px;
+    text-align: center;
+    color: black;
+}
+
+#showcase_services
+{
+    min-height: 250px;
+    background: url(images/service_.JPG)  no-repeat 0 -100px;
+    text-align: center;
+    color: black;
+}
+
+#showcase_projects
+{
+    min-height: 300px;
+    background: url(images/project_3.JPG) no-repeat 0 -100px;
+    text-align: center;
+    color: black;
+}
+
+#showcase h3
+{
+    margin-top: 100px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#newsletter
+{
+    padding: 10px;
+    color: #ffffff;
+    background-image: url(images/background_img4.JPG);
+}
+
+#boxes
+{
+    margin-top: 10px;
+}
+
+#boxes .box
+{
+    float: left;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+#boxes .box img
+{
+    width: 500px;
+}
+
+#boxes_board
+{
+    margin-top: 10px;
+}
+
+#boxes_board .box
+{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes_board .box img
+{
+    width: 200px;
+}
+
+.boxed
+{
+    background-color: cornsilk;
+    border: solid green;
+    width: 450px;
+    padding: 20px;
+    margin: 20px;
+}
+
+aside#sidebar
+{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col
+{
+    float: left;
+    width: 65%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.button
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width : 620px ){
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/*contacts*/
+#snackbar {
+			visibility: hidden;
+			min-width: 250px;
+			margin-left: -125px;
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			border-radius: 2px;
+			padding: 16px;
+			position: fixed;
+			z-index: 1;
+			left: 50%;
+			bottom: 30px;
+			font-size: 15px;
+		}
+
+		#snackbar.show {
+			visibility: visible;
+			-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+			animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+
+		@-webkit-keyframes fadein {
+			from {bottom: 0; opacity: 0;} 
+			to {bottom: 30px; opacity: 1;}
+		}
+
+		@keyframes fadein {
+			from {bottom: 0; opacity: 0;}
+			to {bottom: 30px; opacity: 1;}
+		}
+
+		@-webkit-keyframes fadeout {
+			from {bottom: 30px; opacity: 1;} 
+			to {bottom: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+			from {bottom: 30px; opacity: 1;}
+			to {bottom: 0; opacity: 0;}
+		}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer
+{
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
